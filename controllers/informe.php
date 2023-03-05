@@ -1,15 +1,17 @@
-<?php 
-class Informe extends controller{
-    
+<?php
+class Informe extends controller
+{
+
     public function __construct()
     {
         parent::__construct();
     }
 
 
-    public function pdfProyectos(){       
-        
-        if(!empty($_POST)){ // aca se va a capturar el estado para enviarlo al modelo
+    public function pdfProyectos()
+    {
+
+        if (!empty($_POST)) { // aca se va a capturar el estado para enviarlo al modelo
             $estado = $_POST['sEstado'];
 
             $pdf = new TCPDF();
@@ -30,13 +32,13 @@ class Informe extends controller{
 
             foreach ($acontecimientos as $value) {
                 $contenido .= '<tr>
-                <td>'.$value['tipo'].'</td>
-                <td>'.$value['acontecimiento'].'</td>
-                <td>'.$value['estado'].'</td>
+                <td>' . $value['tipo'] . '</td>
+                <td>' . $value['acontecimiento'] . '</td>
+                <td>' . $value['estado'] . '</td>
                 
-            </tr>';    
-            // Ya está, solo crea la tabla
-            //ok muchas gracias ok
+            </tr>';
+                // Ya está, solo crea la tabla
+                //ok muchas gracias ok
             }
             $contenido .= '</table>';
             $pdf->addPage();
@@ -46,19 +48,9 @@ class Informe extends controller{
         } else {
             // Se devuelven los estados a la vista
             $this->getView()->estados = $this->getModel()->getEstados();
-            $this->getView()->title = "Informe 1 | APP"; 
+            $this->getView()->title = "Informe 1 | APP";
             $pagina = 'informe/pdfproyectos';
             $this->getView()->loadView($pagina);
         }
     }
 }
-
-
-
-
-
-
-
-
-
-?>
