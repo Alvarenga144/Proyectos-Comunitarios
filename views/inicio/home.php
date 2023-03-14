@@ -12,15 +12,14 @@
   <?php
   require_once('views/header.php');
   ?>
-  <br><br>
 
-  <h3>
+  <p>
     <?php
     if (isset($_SESSION['codigo'])) {
       echo 'Bienvenido ' . $_SESSION['usuario'];
     }
     ?>
-  </h3>
+  </p>
 
 
   <?php
