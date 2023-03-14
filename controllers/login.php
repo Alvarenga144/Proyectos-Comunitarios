@@ -9,7 +9,6 @@ class Login extends Controller
 
     public function index()
     {
-
         $pagina = 'Login/index';
         $this->getView()->loadView($pagina);
     }
@@ -70,6 +69,7 @@ class Login extends Controller
         session_start();
         $_SESSION = array();
         session_destroy();
-        echo json_encode(array('status' => true));
+        json_encode(array('status' => true));
+        $this->index();
     }
 }

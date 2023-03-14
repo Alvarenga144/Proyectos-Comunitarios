@@ -17,11 +17,11 @@
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 
 <script>
+  /*
   $(document).ready(function() {
     base_url = '<?php echo URL; ?>';
     $('.cerraresion').on('click', function() {
       $.ajax({
-
           url: base_url + 'login/cerrarSesion',
           type: 'POST',
           dataType: 'JSON',
@@ -40,4 +40,5 @@
         });
     });
   })
+  */
 </script>
