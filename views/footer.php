@@ -1,4 +1,4 @@
-<!--
+
 <footer class="bg-white">
   <div class="mx-auto w-full container p-4 sm:p-6">
     <div class="md:flex md:justify-between">
@@ -83,7 +83,6 @@
     </div>
   </div>
 </footer>
--->
 
 
 <!-- jQuery-->

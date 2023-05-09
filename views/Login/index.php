@@ -1,66 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <link href="<?= URL ?>public/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?= URL ?>public/assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<?= URL ?>public/assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?= URL ?>public/lobibox/LobiBox.min.css" />
-
-    <title>Educational Bootstrap 5 Login Page Website Tampalte</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" type="text/css" href="<?= URL ?>public/css/customStyles.css">
+    <!-- Tailwind css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="<?= URL ?>public/css/validetta.min.css">
+    <title>Login | APP </title>
 </head>
 
 <body>
-    <section class="form-02-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="_lk_de">
-                        <div class="form-03-main">
-                            <div class="logo">
-                                <img src="<?= URL ?>public/assets/images/user.png">
-                            </div>
-                            <form role="form" id="frmLogin">
-                                <div class="form-group">
-                                    <input id="user" type="text" name="user" class="form-control _ge_de_ol" type="text" placeholder="usuario">
-                                </div>
-
-                                <div class="form-group">
-                                    <input id="psw" type="password" name="password" class="form-control _ge_de_ol" type="password" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control" name="typeuser" id="typeuser" placeholder="type user">
-                                        <option value="Invitado">Invitado</option>
-                                        <option value="Responsable">Responsable</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <div class="_btn_04">
-                                        <button type="submit" class="btn btn-sucess" style="color:white;">Login</button>
-                                        <!--<a href="#">Login</a>-->
-                                    </div>
-                            </form>
-                        </div><br><br><br><br>
-                    </div>
+    <div class="flex justify-center items-center h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+        <div class="bg-gray-100 w-80 rounded-lg text-black pb-8 pt-4 px-6">
+            <h2 class="font-semibold text-gray-700 text-3xl text-center">Community Project Manager</h2>
+            <img src="../public/img/plantgroth.png" alt="plantgroth" class="rounded-lg mb-6 mt-2">
+            
+            <form role="form" id="frmLogin">
+                <div>
+                    <input id="user" name="user" class="w-full mb-3 rounded-lg h-8 px-2 bg-gray-100 text-gray-500 border-t-2 border-b-2 border-t-white border-b-gray-300 font-semibold" type="text" placeholder="User">
                 </div>
+
+                <div>
+                    <input id="psw" type="password" class="w-full mb-3 rounded-lg h-8 px-2 bg-gray-100 text-gray-500 border-t-2 border-b-2 border-t-white border-b-gray-300 font-semibold" name="password" placeholder="Password">
+                </div>
+                <div>
+                    <select name="typeuser" id="typeuser" class="w-full mb-2 rounded-lg h-8 px-2 bg-gray-100 text-gray-400 border-t-2 border-b-2 border-t-white border-b-gray-300 font-semibold">
+                        <option value="Invitado">Guest</option>
+                        <option value="Responsable">Employee</option>
+                    </select>
+                </div>
+                    <div>
+                        <button type="submit" class="w-full py-2 text-white rounded-lg bg-sky-500 font-semibold mt-6 hover:bg-sky-600 hover:bg-gray-100 border-t-2 border-b-2 border-t-white border-b-sky-600">Log in</button>
+                        <!--<a href="#">Login</a>-->
+                    </div>
+            </form>
+            <div class="mt-2 font-semibold text-sky-500 text-sm text-center justify-center">
+                <a class="hover:border-b hover:border-b-sky-700 hover:text-sky-700">Forgot your password?</a>
             </div>
         </div>
-        </div>
-    </section>
+        
+    </div>
+    
+
+
+
     <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-    <script src="<?= URL ?>public/lobibox/lobibox.min.js"></script>
     <script src="<?= URL ?>public/js/login.js"></script>
-
 </body>
 
 </html>
