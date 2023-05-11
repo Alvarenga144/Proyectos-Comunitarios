@@ -13,7 +13,10 @@
 </head>
 
 <body>
-    <div class="flex justify-center items-center h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div class="flex justify-center items-center h-screen bg-gradient-to-r from-cyan-300 to-blue-600">
+        <div class="absolute top-7 left-6 rounded-lg px-3 pb-2 bg-gray-100 hover:bg-gray-400 hover:cursor-pointer">
+            <a href="<?= URL ?>inicio/home" class=" font-bold text-3xl text-gray-500 hover:text-white">←</a>
+        </div>
         <div class="bg-gray-100 w-80 rounded-lg text-black pb-8 pt-4 px-6">
             <h2 class="font-semibold text-gray-700 text-3xl text-center">Community Project Manager</h2>
             <img src="../public/img/plantgroth.png" alt="plantgroth" class="rounded-lg mb-6 mt-2">
