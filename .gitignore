@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,windows,linux,node,composer
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,windows,linux,node,composer
 
+### tcpdf reports & lobibox ###
+lobibox/
+tcpdf/
+
 ### Composer ###
 composer.phar
 /vendor/
